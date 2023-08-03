@@ -24,7 +24,7 @@ export default function FilterBar({ onFilter }) {
         <option value="">Questions répondues</option>
         <option value="">Atteints</option>
         <option value="">Non atteints</option>
-        <option value="">Ne sait pas</option>
+        <option value="">Ne sais pas</option>
       </select>
 
       <select>

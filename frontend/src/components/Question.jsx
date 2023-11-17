@@ -86,12 +86,12 @@ function Question() {
     (question) => question.response === "Non Concerné"
   ).length;
   const countUnknown = questions.filter(
-    (question) => question.response === "Ne sais pas"
+    (question) => question.response === "Ne sait pas"
   ).length;
 
   const scoreToNextPage = () => {
     const unknown = mandatoryQuestions.find(
-      (question) => question.response === "Ne sais pas"
+      (question) => question.response === "Ne sait pas"
     );
 
     if (unknown) {
@@ -108,7 +108,7 @@ function Question() {
 
     if (essentialScore < 80) {
       const unknownEssential = essentialQuestions.find(
-        (question) => question.response === "Ne sais pas"
+        (question) => question.response === "Ne sait pas"
       );
 
       if (unknownEssential) {
@@ -220,14 +220,14 @@ function Question() {
 
               <input
                 type="radio"
-                id={`answer${question.id}-ne-sais-pas`}
+                id={`answer${question.id}-ne-sait-pas`}
                 name={`answer${question.id}`}
-                value="Ne sais pas"
-                onChange={() => updateQuestionResponse(question, "Ne sais pas")}
-                checked={question.response === "Ne sais pas"}
+                value="Ne sait pas"
+                onChange={() => updateQuestionResponse(question, "Ne sait pas")}
+                checked={question.response === "Ne sait pas"}
               />
               <label htmlFor={`answer${question.id}`} className="answerChoice">
-                Ne sais pas
+                Ne sait pas
               </label>
             </div>
           </div>

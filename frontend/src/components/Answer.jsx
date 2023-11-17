@@ -89,11 +89,11 @@ function Answer() {
                 <input
                   style={{ marginLeft: "1rem", marginRight: "0.5rem" }}
                   type="radio"
-                  id={`answer${response.id}-ne-sais-pas`}
+                  id={`answer${response.id}-ne-sait-pas`}
                   name={`answer${response.id}`}
-                  value="Ne sais pas"
+                  value="Ne sait pas"
                 />
-                <label htmlFor={`answer${response.id}`}>Ne sais pas</label>
+                <label htmlFor={`answer${response.id}`}>Ne sait pas</label>
               </td>
             </tr>
           ))}

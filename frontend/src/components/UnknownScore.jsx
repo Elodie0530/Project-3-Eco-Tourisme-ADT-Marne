@@ -14,7 +14,7 @@ export default function UnknownScore() {
           Il semble que vous n’ayez pas pu répondre à toutes les questions
           nécessaires au calcul du résultat :
         </p>
-        <p className="case-three">LISTE DES QUESTIONS À “NE SAIS PAS” </p>
+        <p className="case-three">LISTE DES QUESTIONS À “NE SAIT PAS” </p>
         <p>
           Vous êtes encore en chemin. Ce serait dommage de vous arrêter là,
           d’ailleurs, peut-être même que les critères auxquels vous n’avez pu

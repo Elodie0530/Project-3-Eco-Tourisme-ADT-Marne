@@ -11,7 +11,7 @@ const createAnswer = async (req, res) => {
       await models.answer.insert({
         user_id: userId,
         question_id: question.id,
-        response: question.response ?? "Ne sais pas",
+        response: question.response ?? "Ne sait pas",
       });
     });
 

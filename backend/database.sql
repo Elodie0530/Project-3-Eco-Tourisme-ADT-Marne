@@ -195,5 +195,5 @@ CREATE TABLE answer (
   CONSTRAINT fk_question_id
   FOREIGN KEY (question_id)
   REFERENCES question(id),
-  response enum("Atteint", "Non atteint", "Non Concerné", "Ne sais pas") not null
+  response enum("Atteint", "Non atteint", "Non Concerné", "Ne sait pas") not null
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
